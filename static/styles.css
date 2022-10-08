@@ -45,6 +45,7 @@ nav .navbar-brand .green {
 }
 
 #asd {
+  margin-top: 2cm;
   text-decoration: none;
   color: #5555ff;
   overflow: hidden;
@@ -82,6 +83,7 @@ nav .navbar-brand .green {
   -ms-transition: border-color 500ms ease;
   -o-transition: border-color 500ms ease;
   transition: border-color 500ms ease;
+  
 }
 
 a:hover .button:before,
@@ -158,6 +160,10 @@ a:hover .button:after {
   transform: rotate(40deg); /* Standard syntax */
 }
 
+
+
+
+
 /*formatação da imagem da escola*/
 #imag {
   top: 1cm;
@@ -170,7 +176,6 @@ a:hover .button:after {
 /* formatação das titulos na capa */
 body {
   font-family: Arial, "Times New Roman", sans-serif;
-  
 }
 
 .ribbon {
@@ -382,7 +387,7 @@ h1 {
 h3 {
   text-align: center;
   font-size: 40px;
-  font-family: 'Times New Roman', "calibri", sans-serif;
+  font-family: "Times New Roman", "calibri", sans-serif;
 }
 .lcorpo {
   display: table;
@@ -473,6 +478,15 @@ h3 {
   width: 40vw;
   height: 80vh;
 }
+#asspg {
+  display: table-cell;
+  position: absolute;
+  right: 3%;
+  padding-top: 2cm;
+  float: left;
+  width: 40vw;
+  height: 87vh;
+}
 #asspp {
   display: table-cell;
   position: absolute;
@@ -482,6 +496,16 @@ h3 {
   width: 20vw;
   height: 70vh;
 }
+#asspl {
+  display: table-cell;
+  position: absolute;
+  right: 3%;
+  margin-top: 1.5cm;
+  float: left;
+  width: 35vw;
+  height: 80vh;
+}
+
 #js {
   display: table-cell;
   position: absolute;
@@ -584,7 +608,7 @@ h3 {
 /*The code for the RGB around the Bibiografia Box (the same as the index one but with differnt measures)*/
 .bibl {
   position: relative;
-  margin: 300px auto 0;
+  margin: 400px auto 0;
   width: 80vw;
   height: 110vh;
   background: linear-gradient(0deg, lightgray, lightblue);
@@ -857,3 +881,1743 @@ h3 {
 
 /* animação de aparecimento dos divs com o scroll*/
 /* feito com o plugin em https://github.com/matthieua/WOW */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*size alterations for different screens (smaller than FHD)*/
+@media (max-width: 1400px) {
+  /* tamanho da letra na nav-bar */
+  nav .navbar-brand {
+    font-size: xx-large;
+  }
+
+  /* Cores na nav-bar*/
+  nav .navbar-brand .blue {
+    color: #537fbe;
+  }
+  nav .navbar-brand .red {
+    color: #ea433b;
+  }
+  nav .navbar-brand .yellow {
+    color: #f5b82e;
+  }
+  nav .navbar-brand .green {
+    color: #2e944b;
+  }
+  #navblue {
+    color: #0000ff;
+  }
+  #navred {
+    color: red;
+  }
+  /* formatação da imagem de capa */
+  #img {
+    position: absolute;
+    width: 700px;
+    height: 550px;
+    right: 29%;
+    top: 21%;
+  }
+
+  /*formatação das fitas da capa */
+
+  /*feito noutro ficheiro em ../dist/style.css   (exceto o titulo)*/
+
+  /*formatação do meu nome*/
+  @import "bourbon";
+
+  #diam {
+    text-align: center;
+    max-width: 1500px;
+    padding-top: 1cm;
+  }
+
+  #asd {
+    text-decoration: none;
+    color: #5555ff;
+    overflow: hidden;
+    display: block;
+    margin-left: 65%;
+  }
+
+  .button {
+    letter-spacing: 0.5em;
+    text-decoration: center;
+    padding: 0.75em 1.25em 0.75em 1.75em;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    white-space: nowrap;
+    -webkit-transition: border-color 500ms ease, color 250ms ease;
+    -moz-transition: border-color 500ms ease, color 250ms ease;
+    -ms-transition: border-color 500ms ease, color 250ms ease;
+    -o-transition: border-color 500ms ease, color 250ms ease;
+    transition: border-color 500ms ease, color 250ms ease;
+  }
+
+  .button:hover {
+    color: #cfb4f7;
+    border-color: #cfb4f7;
+  }
+
+  .button:before,
+  .button:after {
+    border-style: solid;
+    border-color: whitesmoke;
+    border-width: 0;
+    -webkit-transition: border-color 500ms ease;
+    -moz-transition: border-color 500ms ease;
+    -ms-transition: border-color 500ms ease;
+    -o-transition: border-color 500ms ease;
+    transition: border-color 500ms ease;
+  }
+
+  a:hover .button:before,
+  a:hover .button:after {
+    border-color: #cfb4f7;
+  }
+
+  .dimond {
+    border-width: 2px 0;
+    position: relative;
+    display: block;
+    padding: 0.75em 0 0.75em 0.5em;
+    margin-left: 1.6em;
+    margin-right: 1.6em;
+  }
+
+  .dimond:before {
+    content: "";
+    display: inline-block;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    -o-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    position: absolute;
+    top: -50%;
+    bottom: 50%;
+    left: -1.55em;
+    right: 0;
+  }
+
+  .dimond:after {
+    content: "";
+    display: inline-block;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    position: absolute;
+    top: -50%;
+    bottom: 50%;
+    left: 0;
+    right: -1.55em;
+  }
+
+  .main_div > div {
+    width: 100px;
+    height: 100px;
+    border: 1px dashed gray;
+    display: inline-block;
+  }
+  .main_div .rotate {
+    -webkit-transition: -webkit-transform 1s; /* Safari */
+    transition: transform 1s;
+  }
+  .rotate {
+    -ms-transform: rotate(40deg); /* IE 9 */
+    -webkit-transform: rotate(40deg); /* Safari */
+    transform: rotate(40deg); /* Standard syntax */
+  }
+
+  /*formatação da imagem da escola*/
+  #imag {
+    top: 1cm;
+    padding-left: 1cm;
+    width: 250px;
+    height: 120px;
+    margin: 0cm;
+  }
+
+  /* formatação das titulos na capa */
+  body {
+    font-family: Arial, "Times New Roman", sans-serif;
+  }
+
+  .ribbon {
+    top: 0%;
+    left: 23%;
+    width: 800px;
+    height: 70px;
+    position: relative;
+    color: #fff;
+    font: 28px/60px sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    background: #3d79d0;
+
+    -webkit-animation: main 250ms;
+    -moz-animation: main 250ms;
+    -ms-animation: main 250ms;
+    animation: main 250ms;
+  }
+
+  .ribbon i {
+    position: absolute;
+  }
+
+  .ribbon i:first-child,
+  .ribbon i:nth-child(2) {
+    position: absolute;
+    left: -20px;
+    bottom: -20px;
+    z-index: -1;
+    border: 20px solid transparent;
+    border-right-color: #043140;
+
+    -webkit-animation: edge 500ms;
+    -moz-animation: edge 500ms;
+    -ms-animation: edge 500ms;
+    animation: edge 500ms;
+  }
+
+  .ribbon i:nth-child(2) {
+    left: auto;
+    right: -20px;
+    border-right-color: transparent;
+    border-left-color: #043140;
+  }
+
+  .ribbon i:nth-child(3),
+  .ribbon i:last-child {
+    width: 20px;
+    bottom: -20px;
+    left: -40px;
+    z-index: -2;
+    border: 30px solid #1d53c0;
+    border-left-color: transparent;
+
+    -webkit-animation: back 600ms;
+    -moz-animation: back 600ms;
+    -ms-animation: back 600ms;
+    animation: back 600ms;
+
+    -webkit-transform-origin: 100% 0;
+    -moz-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+  }
+
+  .ribbon i:last-child {
+    bottom: -20px;
+    left: auto;
+    right: -40px;
+    border: 30px solid #1d53c0;
+    border-right-color: transparent;
+
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+
+  /* animations */
+
+  @-webkit-keyframes main {
+    0% {
+      -webkit-transform: scaleX(0);
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+    }
+  }
+
+  @-webkit-keyframes edge {
+    0%,
+    50% {
+      -webkit-transform: scaleY(0);
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+    }
+  }
+
+  @-webkit-keyframes back {
+    0%,
+    75% {
+      -webkit-transform: scaleX(0);
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+    }
+  }
+
+  @-moz-keyframes main {
+    0% {
+      -moz-transform: scaleX(0);
+    }
+    100% {
+      -moz-transform: scaleX(1);
+    }
+  }
+
+  @-moz-keyframes edge {
+    0%,
+    50% {
+      -moz-transform: scaleY(0);
+    }
+    100% {
+      -moz-transform: scaleY(1);
+    }
+  }
+
+  @-moz-keyframes back {
+    0%,
+    75% {
+      -moz-transform: scaleX(0);
+    }
+    100% {
+      -moz-transform: scaleX(1);
+    }
+  }
+
+  @keyframes main {
+    0% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+
+  @keyframes edge {
+    0%,
+    50% {
+      transform: scaleY(0);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+
+  @keyframes back {
+    0%,
+    75% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+
+  /* formatação de textos */
+  h4 {
+    text-align: justify;
+    font-size: 24px;
+    font-family: "Times New Roman", "calibri", sans-serif;
+  }
+  h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+  h3 {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Times New Roman", "calibri", sans-serif;
+  }
+  .lcorpo {
+    display: table;
+  }
+
+  #lang {
+    display: table-cell;
+    text-align: justify;
+    float: right;
+    width: 105vh;
+    padding-left: 2cm;
+    margin-right: 10px;
+    padding-top: 2cm;
+  }
+  #lang1 {
+    display: table-cell;
+    text-align: justify;
+    float: right;
+    width: 105vh;
+    padding-left: 2cm;
+    margin-right: 10px;
+    padding-top: 1cm;
+  }
+
+  /* formatação de titulos */
+  #title {
+    text-align: center;
+    left: 100%;
+    color: red;
+    padding-top: 2cm;
+  }
+  #titleI {
+    text-align: center;
+    left: 100%;
+    color: red;
+    padding-top: 1.2cm;
+  }
+  #title1 {
+    text-align: center;
+    left: 100%;
+    padding-top: 2cm;
+    color: lightblue;
+  }
+
+  #subtitle {
+    text-align: center;
+    padding-top: 2cm;
+    color: #537fbe;
+  }
+  /*formatação das imagens */
+  #cb {
+    display: table-cell;
+    position: absolute;
+    right: 5%;
+    padding-top: 3cm;
+    float: left;
+    width: 37.4vw;
+    height: 55vh;
+  }
+  #ascii {
+    display: table-cell;
+    position: absolute;
+    right: 5%;
+    float: left;
+    width: 37vw;
+    height: 60vh;
+    padding-top: 3cm;
+  }
+  #iascii {
+    padding-top: 45vh;
+  }
+  #ass {
+    display: table-cell;
+    position: absolute;
+    right: 3%;
+    padding-top: 2cm;
+    float: left;
+    width: 40vw;
+    height: 100vh;
+  }
+
+  #assp {
+    display: table-cell;
+    position: absolute;
+    right: 3%;
+    padding-top: 2cm;
+    float: left;
+    width: 40vw;
+    height: 80vh;
+  }
+  #asspg {
+    display: table-cell;
+    position: absolute;
+    right: 3%;
+    padding-top: 2cm;
+    float: left;
+    width: 40vw;
+    height: 87vh;
+  }
+  #asspp {
+    display: table-cell;
+    position: absolute;
+    right: 10%;
+    padding-top: 2cm;
+    float: left;
+    width: 25vw;
+    height: 80vh;
+  }
+  #asspl {
+    display: table-cell;
+    position: absolute;
+    right: 3%;
+    margin-top: 1.8cm;
+    float: left;
+    width: 40vw;
+    height: 90vh;
+  }
+
+  #js {
+    display: table-cell;
+    position: absolute;
+    right: 7%;
+    padding-top: 2cm;
+    float: left;
+    width: 30vw;
+    height: 75vh;
+  }
+  #C {
+    display: table-cell;
+    position: absolute;
+    right: 7%;
+    padding-top: 2cm;
+    float: left;
+    width: 30vw;
+    height: 60vh;
+  }
+  /* formatação da conclusão */
+  #con {
+    padding-left: 3cm;
+    padding-right: 3cm;
+  }
+
+  /*The code for the RGB around the Indice Box*/
+  .block {
+    position: relative;
+    margin: 300px auto 0;
+    width: 50vw;
+    height: 81vh;
+    background: linear-gradient(0deg, lightgray, lightblue);
+  }
+
+  .block:before,
+  .block:after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(
+      45deg,
+      #fb0094,
+      #0000ff,
+      #00ff00,
+      #ffff00,
+      #ff0000,
+      #fb0094,
+      #0000ff,
+      #00ff00,
+      #ffff00,
+      #ff0000
+    );
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+  }
+
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+  .block:after {
+    filter: blur(50px);
+  }
+
+  /*Rainbow "Índice"*/
+  @keyframes rainbow {
+    0% {
+      color: red;
+    }
+    50% {
+      color: green;
+    }
+    100% {
+      color: blue;
+    }
+  }
+  .rainbow {
+    animation: rainbow 3s infinite;
+  }
+
+  #co {
+    padding-top: 1cm;
+    text-align: justify;
+  }
+  #bib {
+    padding-left: 1cm;
+  }
+
+  /*The code for the RGB around the Bibiografia Box (the same as the index one but with differnt measures)*/
+  .bibl {
+    position: relative;
+    margin: 400px auto 0;
+    width: 80vw;
+    height: 130vh;
+    background: linear-gradient(0deg, lightgray, lightblue);
+  }
+
+  .bibl:before,
+  .bibl:after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(
+      45deg,
+      #fb0094,
+      #0000ff,
+      #00ff00,
+      #ffff00,
+      #ff0000,
+      #fb0094,
+      #0000ff,
+      #00ff00,
+      #ffff00,
+      #ff0000
+    );
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+  }
+
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+  .bibl:after {
+    filter: blur(50px);
+  }
+
+  /* Code for the quiz box */
+
+  #ah {
+    text-decoration: none;
+    color: transparent;
+  }
+
+  #Qbox {
+    position: relative;
+    margin: 100px auto 0;
+    width: 70vw;
+    height: 77vh;
+    background: linear-gradient(0deg, lightgray, lightblue);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .centerBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    text-decoration: none;
+  }
+
+  .categoryWrapper {
+    height: 310px;
+    width: 460px;
+    background: url("http://ohlookawebsite.com/bathroomtestfull.jpg") no-repeat
+      center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .categoryWrapper:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a29ca9+0,95909b+99 */
+    background: #a29ca9; /* Old browsers */
+    background: -moz-linear-gradient(
+      -45deg,
+      #a29ca9 0%,
+      #95909b 99%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      -45deg,
+      #a29ca9 0%,
+      #95909b 99%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      135deg,
+      #a29ca9 0%,
+      #95909b 99%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', endColorstr='#95909b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    content: "";
+    opacity: 0;
+    -webkit-transition: opacity 0.9s ease 0s;
+  }
+
+  .categoryWrapper:hover:after {
+    opacity: 0.4;
+  }
+
+  .categoryWrapper h1 {
+    color: white;
+    font-size: 50px;
+    letter-spacing: 2px;
+    -webkit-transition: all 0.15s ease 0s;
+    position: relative;
+    z-index: 10;
+  }
+
+  .categoryWrapper:hover h1 {
+    transform: translateY(-10px);
+  }
+
+  .categoryWrapper button {
+    position: absolute;
+    transform: translatey(60px);
+    -webkit-appearance: none;
+    border: none;
+    background: none;
+    color: white;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    z-index: 10;
+    text-decoration: none;
+  }
+
+  .categoryWrapper button span {
+    display: block;
+    position: relative;
+    line-height: 50px;
+    height: 50px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .categoryWrapper button > a > span:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 20px;
+    height: 0;
+
+    border: 1px solid white;
+    border-left: none;
+    border-bottom: none;
+
+    transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  }
+
+  .categoryWrapper:hover button > a > span:after {
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  }
+
+  .categoryWrapper button > a > span:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 20px;
+    height: 0;
+
+    border: 1px solid white;
+    border-right: none;
+    border-bottom: none;
+
+    transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  }
+
+  .categoryWrapper:hover button > a > span:before {
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  }
+
+  .categoryWrapper button > a > span > span:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+
+  .categoryWrapper:hover button > a > span > span:before {
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }
+
+  .categoryWrapper button > a > span > span:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+
+  .categoryWrapper:hover button > a > span > span:after {
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }
+
+  .categoryWrapper button > span > span > span {
+    transition: color 0.15s ease-out 0.3s;
+    color: transparent;
+    text-decoration: none;
+  }
+
+  .categoryWrapper:hover button > a > span > span > span {
+    color: white;
+    text-decoration: none;
+  }
+
+  .categoryWrapper button > a > span > span > span:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #1f2e4d;
+    content: attr(data-attr-span);
+    width: 0%;
+    height: 100%;
+    background: white;
+    white-space: nowrap;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: width 0.2s;
+  }
+
+  .categoryWrapper button:hover > a > span > span > span:after {
+    width: 100%;
+  }
+
+  /* animação de aparecimento dos divs com o scroll*/
+  /* feito com o plugin em https://github.com/matthieua/WOW */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Size alterations for even smaller pcs*/
+@media (max-width: 900px) {
+
+    /* tamanho da letra na nav-bar */
+    nav .navbar-brand {
+      font-size: xx-large;
+    }
+  
+    /* Cores na nav-bar*/
+    nav .navbar-brand .blue {
+      color: #537fbe;
+    }
+    nav .navbar-brand .red {
+      color: #ea433b;
+    }
+    nav .navbar-brand .yellow {
+      color: #f5b82e;
+    }
+    nav .navbar-brand .green {
+      color: #2e944b;
+    }
+    #navblue {
+      color: #0000ff;
+    }
+    #navred {
+      color: red;
+    }
+    /* formatação da imagem de capa */
+    #img {
+      position: absolute;
+      width: 500px;
+      height: 424px;
+      right: 29%;
+      top: 21%;
+    }
+  
+    /*formatação das fitas da capa */
+  
+    /*feito noutro ficheiro em ../dist/style.css   (exceto o titulo)*/
+  
+    /*formatação do meu nome*/
+    @import "bourbon";
+  
+    #diam {
+      text-align: center;
+      max-width: 1500px;
+      padding-top: 1cm;
+    }
+  
+    #asd {
+      text-decoration: none;
+      color: #5555ff;
+      overflow: hidden;
+      display: block;
+      margin-left: 57%;
+      width: 450px;
+    }
+  
+    .button {
+      letter-spacing: 0.5em;
+      text-decoration: center;
+      padding: 0.75em 1.25em 0.75em 1.75em;
+      border-color: white;
+      border-width: 2px;
+      border-style: solid;
+      white-space: nowrap;
+      -webkit-transition: border-color 500ms ease, color 250ms ease;
+      -moz-transition: border-color 500ms ease, color 250ms ease;
+      -ms-transition: border-color 500ms ease, color 250ms ease;
+      -o-transition: border-color 500ms ease, color 250ms ease;
+      transition: border-color 500ms ease, color 250ms ease;
+    }
+  
+    .button:hover {
+      color: #cfb4f7;
+      border-color: #cfb4f7;
+    }
+  
+    .button:before,
+    .button:after {
+      border-style: solid;
+      border-color: whitesmoke;
+      border-width: 0;
+      -webkit-transition: border-color 500ms ease;
+      -moz-transition: border-color 500ms ease;
+      -ms-transition: border-color 500ms ease;
+      -o-transition: border-color 500ms ease;
+      transition: border-color 500ms ease;
+    }
+  
+    a:hover .button:before,
+    a:hover .button:after {
+      border-color: #cfb4f7;
+    }
+  
+    .dimond {
+      border-width: 2px 0;
+      position: relative;
+      display: block;
+      padding: 0.75em 0 0.75em 0.5em;
+      margin-left: 1.6em;
+      margin-right: 1.6em;
+    }
+  
+    .dimond:before {
+      content: "";
+      display: inline-block;
+      border-bottom-width: 2px;
+      border-left-width: 2px;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      -webkit-transform-origin: 0% 100%;
+      -moz-transform-origin: 0% 100%;
+      -ms-transform-origin: 0% 100%;
+      -o-transform-origin: 0% 100%;
+      transform-origin: 0% 100%;
+      position: absolute;
+      top: -50%;
+      bottom: 50%;
+      left: -1.55em;
+      right: 0;
+    }
+  
+    .dimond:after {
+      content: "";
+      display: inline-block;
+      border-bottom-width: 2px;
+      border-right-width: 2px;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-transform-origin: 100% 100%;
+      -moz-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+      -o-transform-origin: 100% 100%;
+      transform-origin: 100% 100%;
+      position: absolute;
+      top: -50%;
+      bottom: 50%;
+      left: 0;
+      right: -1.55em;
+    }
+  
+    .main_div > div {
+      width: 100px;
+      height: 100px;
+      border: 1px dashed gray;
+      display: inline-block;
+    }
+    .main_div .rotate {
+      -webkit-transition: -webkit-transform 1s; /* Safari */
+      transition: transform 1s;
+    }
+    .rotate {
+      -ms-transform: rotate(65deg); /* IE 9 */
+      -webkit-transform: rotate(65deg); /* Safari */
+      transform: rotate(65deg); /* Standard syntax */
+    }
+  
+    /*formatação da imagem da escola*/
+    #imag {
+      top: 1cm;
+      padding-left: 1cm;
+      width: 250px;
+      height: 120px;
+
+    }
+    /* tipo de letra*/
+    body {
+      font-family: Arial, "Times New Roman", sans-serif;
+    }
+  
+    /*titulo do trabalho*/
+    .ribbon {
+      top: 0%;
+      left: 5%;
+      width: 700px;
+      height: 70px;
+      position: relative;
+      color: #fff;
+      font: 28px/60px sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      background: #3d79d0;
+  
+      -webkit-animation: main 250ms;
+      -moz-animation: main 250ms;
+      -ms-animation: main 250ms;
+      animation: main 250ms;
+    }
+  
+    .ribbon i {
+      position: absolute;
+    }
+  
+    .ribbon i:first-child,
+    .ribbon i:nth-child(2) {
+      position: absolute;
+      left: -20px;
+      bottom: -20px;
+      z-index: -1;
+      border: 20px solid transparent;
+      border-right-color: #043140;
+  
+      -webkit-animation: edge 500ms;
+      -moz-animation: edge 500ms;
+      -ms-animation: edge 500ms;
+      animation: edge 500ms;
+    }
+  
+    .ribbon i:nth-child(2) {
+      left: auto;
+      right: -20px;
+      border-right-color: transparent;
+      border-left-color: #043140;
+    }
+  
+    .ribbon i:nth-child(3),
+    .ribbon i:last-child {
+      width: 20px;
+      bottom: -20px;
+      left: -40px;
+      z-index: -2;
+      border: 30px solid #1d53c0;
+      border-left-color: transparent;
+  
+      -webkit-animation: back 600ms;
+      -moz-animation: back 600ms;
+      -ms-animation: back 600ms;
+      animation: back 600ms;
+  
+      -webkit-transform-origin: 100% 0;
+      -moz-transform-origin: 100% 0;
+      -ms-transform-origin: 100% 0;
+      transform-origin: 100% 0;
+    }
+  
+    .ribbon i:last-child {
+      bottom: -20px;
+      left: auto;
+      right: -40px;
+      border: 30px solid #1d53c0;
+      border-right-color: transparent;
+  
+      -webkit-transform-origin: 0 0;
+      -moz-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+      transform-origin: 0 0;
+    }
+  
+    /* animations */
+  
+    @-webkit-keyframes main {
+      0% {
+        -webkit-transform: scaleX(0);
+      }
+      100% {
+        -webkit-transform: scaleX(1);
+      }
+    }
+  
+    @-webkit-keyframes edge {
+      0%,
+      50% {
+        -webkit-transform: scaleY(0);
+      }
+      100% {
+        -webkit-transform: scaleY(1);
+      }
+    }
+  
+    @-webkit-keyframes back {
+      0%,
+      75% {
+        -webkit-transform: scaleX(0);
+      }
+      100% {
+        -webkit-transform: scaleX(1);
+      }
+    }
+  
+    @-moz-keyframes main {
+      0% {
+        -moz-transform: scaleX(0);
+      }
+      100% {
+        -moz-transform: scaleX(1);
+      }
+    }
+  
+    @-moz-keyframes edge {
+      0%,
+      50% {
+        -moz-transform: scaleY(0);
+      }
+      100% {
+        -moz-transform: scaleY(1);
+      }
+    }
+  
+    @-moz-keyframes back {
+      0%,
+      75% {
+        -moz-transform: scaleX(0);
+      }
+      100% {
+        -moz-transform: scaleX(1);
+      }
+    }
+  
+    @keyframes main {
+      0% {
+        transform: scaleX(0);
+      }
+      100% {
+        transform: scaleX(1);
+      }
+    }
+  
+    @keyframes edge {
+      0%,
+      50% {
+        transform: scaleY(0);
+      }
+      100% {
+        transform: scaleY(1);
+      }
+    }
+  
+    @keyframes back {
+      0%,
+      75% {
+        transform: scaleX(0);
+      }
+      100% {
+        transform: scaleX(1);
+      }
+    }
+  
+    /* formatação de textos */
+    h4 {
+      text-align: justify;
+      font-size: 24px;
+      font-family: "Times New Roman", "calibri", sans-serif;
+    }
+    h1 {
+      text-align: center;
+      font-size: 50px;
+    }
+    h3 {
+      text-align: center;
+      font-size: 40px;
+      font-family: "Times New Roman", "calibri", sans-serif;
+    }
+    .lcorpo {
+      display: table;
+    }
+  
+    #lang {
+      display: table-cell;
+      text-align: justify;
+      float: right;
+      width: 105vh;
+      padding-left: 2cm;
+      margin-right: 10px;
+      padding-top: 2cm;
+    }
+    #lang1 {
+      display: table-cell;
+      text-align: justify;
+      float: right;
+      width: 105vh;
+      padding-left: 2cm;
+      margin-right: 10px;
+      padding-top: 1cm;
+    }
+  
+    /* formatação de titulos */
+    #title {
+      text-align: center;
+      left: 100%;
+      color: red;
+      padding-top: 2cm;
+    }
+    #titleI {
+      text-align: center;
+      left: 100%;
+      color: red;
+      padding-top: 1.2cm;
+    }
+    #title1 {
+      text-align: center;
+      left: 100%;
+      padding-top: 2cm;
+      color: lightblue;
+    }
+  
+    #subtitle {
+      text-align: center;
+      padding-top: 2cm;
+      color: #537fbe;
+    }
+    /*formatação das imagens */
+    #cb {
+      display: table-cell;
+      position: absolute;
+      right: 5%;
+      padding-top: 3cm;
+      float: left;
+      width: 37.4vw;
+      height: 55vh;
+    }
+    #ascii {
+      display: table-cell;
+      position: absolute;
+      right: 5%;
+      float: left;
+      width: 37vw;
+      height: 60vh;
+      padding-top: 3cm;
+    }
+    #iascii {
+      padding-top: 45vh;
+    }
+    #ass {
+      display: table-cell;
+      position: absolute;
+      right: 3%;
+      padding-top: 2cm;
+      float: left;
+      width: 40vw;
+      height: 100vh;
+    }
+  
+    #assp {
+      display: table-cell;
+      position: absolute;
+      right: 3%;
+      padding-top: 2cm;
+      float: left;
+      width: 40vw;
+      height: 80vh;
+    }
+    #asspg {
+      display: table-cell;
+      position: absolute;
+      right: 3%;
+      padding-top: 2cm;
+      float: left;
+      width: 40vw;
+      height: 87vh;
+    }
+    #asspp {
+      display: table-cell;
+      position: absolute;
+      right: 10%;
+      padding-top: 2cm;
+      float: left;
+      width: 25vw;
+      height: 80vh;
+    }
+    #asspl {
+      display: table-cell;
+      position: absolute;
+      right: 3%;
+      margin-top: 1.8cm;
+      float: left;
+      width: 40vw;
+      height: 90vh;
+    }
+  
+    #js {
+      display: table-cell;
+      position: absolute;
+      right: 7%;
+      padding-top: 2cm;
+      float: left;
+      width: 30vw;
+      height: 75vh;
+    }
+    #C {
+      display: table-cell;
+      position: absolute;
+      right: 7%;
+      padding-top: 2cm;
+      float: left;
+      width: 30vw;
+      height: 60vh;
+    }
+    /* formatação da conclusão */
+    #con {
+      padding-left: 3cm;
+      padding-right: 3cm;
+    }
+  
+    /*The code for the RGB around the Indice Box*/
+    .block {
+      position: relative;
+      margin: 300px auto 0;
+      width: 50vw;
+      height: 81vh;
+      background: linear-gradient(0deg, lightgray, lightblue);
+    }
+  
+    .block:before,
+    .block:after {
+      content: "";
+      position: absolute;
+      left: -2px;
+      top: -2px;
+      background: linear-gradient(
+        45deg,
+        #fb0094,
+        #0000ff,
+        #00ff00,
+        #ffff00,
+        #ff0000,
+        #fb0094,
+        #0000ff,
+        #00ff00,
+        #ffff00,
+        #ff0000
+      );
+      background-size: 400%;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      z-index: -1;
+      animation: steam 20s linear infinite;
+    }
+  
+    @keyframes steam {
+      0% {
+        background-position: 0 0;
+      }
+      50% {
+        background-position: 400% 0;
+      }
+      100% {
+        background-position: 0 0;
+      }
+    }
+  
+    .block:after {
+      filter: blur(50px);
+    }
+  
+    /*Rainbow "Índice"*/
+    @keyframes rainbow {
+      0% {
+        color: red;
+      }
+      50% {
+        color: green;
+      }
+      100% {
+        color: blue;
+      }
+    }
+    .rainbow {
+      animation: rainbow 3s infinite;
+    }
+  
+    #co {
+      padding-top: 1cm;
+      text-align: justify;
+    }
+    #bib {
+      padding-left: 1cm;
+    }
+  
+    /*The code for the RGB around the Bibiografia Box (the same as the index one but with differnt measures)*/
+    .bibl {
+      position: relative;
+      margin: 400px auto 0;
+      width: 80vw;
+      height: 130vh;
+      background: linear-gradient(0deg, lightgray, lightblue);
+    }
+  
+    .bibl:before,
+    .bibl:after {
+      content: "";
+      position: absolute;
+      left: -2px;
+      top: -2px;
+      background: linear-gradient(
+        45deg,
+        #fb0094,
+        #0000ff,
+        #00ff00,
+        #ffff00,
+        #ff0000,
+        #fb0094,
+        #0000ff,
+        #00ff00,
+        #ffff00,
+        #ff0000
+      );
+      background-size: 400%;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      z-index: -1;
+      animation: steam 20s linear infinite;
+    }
+  
+    @keyframes steam {
+      0% {
+        background-position: 0 0;
+      }
+      50% {
+        background-position: 400% 0;
+      }
+      100% {
+        background-position: 0 0;
+      }
+    }
+  
+    .bibl:after {
+      filter: blur(50px);
+    }
+  
+    /* Code for the quiz box */
+  
+    #ah {
+      text-decoration: none;
+      color: transparent;
+    }
+  
+    #Qbox {
+      position: relative;
+      margin: 100px auto 0;
+      width: 70vw;
+      height: 77vh;
+      background: linear-gradient(0deg, lightgray, lightblue);
+    }
+  
+    * {
+      box-sizing: border-box;
+    }
+  
+    .centerBox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 600px;
+      text-decoration: none;
+    }
+  
+    .categoryWrapper {
+      height: 310px;
+      width: 460px;
+      background: url("http://ohlookawebsite.com/bathroomtestfull.jpg") no-repeat
+        center center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+  
+    .categoryWrapper:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a29ca9+0,95909b+99 */
+      background: #a29ca9; /* Old browsers */
+      background: -moz-linear-gradient(
+        -45deg,
+        #a29ca9 0%,
+        #95909b 99%
+      ); /* FF3.6-15 */
+      background: -webkit-linear-gradient(
+        -45deg,
+        #a29ca9 0%,
+        #95909b 99%
+      ); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(
+        135deg,
+        #a29ca9 0%,
+        #95909b 99%
+      ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', endColorstr='#95909b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      content: "";
+      opacity: 0;
+      -webkit-transition: opacity 0.9s ease 0s;
+    }
+  
+    .categoryWrapper:hover:after {
+      opacity: 0.4;
+    }
+  
+    .categoryWrapper h1 {
+      color: white;
+      font-size: 50px;
+      letter-spacing: 2px;
+      -webkit-transition: all 0.15s ease 0s;
+      position: relative;
+      z-index: 10;
+    }
+  
+    .categoryWrapper:hover h1 {
+      transform: translateY(-10px);
+    }
+  
+    .categoryWrapper button {
+      position: absolute;
+      transform: translatey(60px);
+      -webkit-appearance: none;
+      border: none;
+      background: none;
+      color: white;
+      width: 250px;
+      height: 50px;
+      font-size: 20px;
+      padding: 0;
+      margin: 0;
+      outline: none;
+      z-index: 10;
+      text-decoration: none;
+    }
+  
+    .categoryWrapper button span {
+      display: block;
+      position: relative;
+      line-height: 50px;
+      height: 50px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  
+    .categoryWrapper button > a > span:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 20px;
+      height: 0;
+  
+      border: 1px solid white;
+      border-left: none;
+      border-bottom: none;
+  
+      transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+    }
+  
+    .categoryWrapper:hover button > a > span:after {
+      width: calc(50% - 1px);
+      height: calc(100% - 2px);
+      transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+    }
+  
+    .categoryWrapper button > a > span:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 50%;
+      width: 20px;
+      height: 0;
+  
+      border: 1px solid white;
+      border-right: none;
+      border-bottom: none;
+  
+      transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+    }
+  
+    .categoryWrapper:hover button > a > span:before {
+      width: calc(50% - 1px);
+      height: calc(100% - 2px);
+      transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+    }
+  
+    .categoryWrapper button > a > span > span:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0%;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+    }
+  
+    .categoryWrapper:hover button > a > span > span:before {
+      opacity: 1;
+      border-bottom: 1px solid white;
+      width: calc(50%);
+      height: 1px;
+      transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+    }
+  
+    .categoryWrapper button > a > span > span:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0%;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+    }
+  
+    .categoryWrapper:hover button > a > span > span:after {
+      opacity: 1;
+      border-bottom: 1px solid white;
+      width: calc(50%);
+      height: 1px;
+      transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+    }
+  
+    .categoryWrapper button > span > span > span {
+      transition: color 0.15s ease-out 0.3s;
+      color: transparent;
+      text-decoration: none;
+    }
+  
+    .categoryWrapper:hover button > a > span > span > span {
+      color: white;
+      text-decoration: none;
+    }
+  
+    .categoryWrapper button > a > span > span > span:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: #1f2e4d;
+      content: attr(data-attr-span);
+      width: 0%;
+      height: 100%;
+      background: white;
+      white-space: nowrap;
+      text-align: center;
+      margin: auto;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      transition: width 0.2s;
+    }
+  
+    .categoryWrapper button:hover > a > span > span > span:after {
+      width: 100%;
+    }
+  
+    /* animação de aparecimento dos divs com o scroll*/
+    /* feito com o plugin em https://github.com/matthieua/WOW */
+  }
