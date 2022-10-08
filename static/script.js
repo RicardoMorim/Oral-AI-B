@@ -26,3 +26,4 @@ document.getElementById("rotate").onclick = function () {
 
 //ANIMAÇÃO DOS DIVS COM O SCROLL
 new WOW().init(); //plugin do github: https://github.com/matthieua/WOW
+

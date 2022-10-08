@@ -24,10 +24,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     ></script>
     <script href="static/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="static/styles.css"
-    />
+    <link rel="stylesheet" href="static/styles.css" />
     <link rel="stylesheet" href="static/dist/style.css" />
     <link rel="stylesheet" href="static/animate.css" />
     <link
@@ -60,13 +57,13 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav me-auto mt-2">
             <li class="nav-item" id="navred">
+              <!--Linked list da nav-bar-->
               <a class="nav-link" href="https://escolahenriquemedina.org">
                 ESHM
               </a>
             </li>
-            <!--Linked list da nav-bar-->
             <li class="nav-item" id="navred">
-              <a class="nav-link" href="#c"> 2022/2023 </a>
+              <a class="nav-link" href="#"> 2022/2023 </a>
             </li>
           </ul>
         </div>
@@ -145,7 +142,7 @@
 
       <section id="c">
         <div class="container" id="co">
-          <h4 id="con">
+          <h4 id="con" class="fst-normal">
             <p>
               Como já vimos, neste trabalho irei falar sobre linguagens de
               programção, como funcionam, e para o que são mais usadas.
@@ -189,7 +186,7 @@
       <section class="lcorpo">
         <div class="Linguagem" id="ltxt">
           <h4 id="lang" class="fst-normal">
-            <p>
+            <p class="fst-normal">
               Uma linguagem de programação é o que um programador utiliza para
               dar ordens ao computador. Podendo ser utilizadas desde para
               automatizar tarefas difícieis até para o lazer. Os computadores
@@ -207,7 +204,7 @@
               várias maneiras, na programação os mais utilizados são o binário,
               o decimal, e o hexadecimal
             </p>
-            <p>
+            <p class="fst-normal">
               A tabela <i>ASCII</i> demonstra como o computador representa cada
               caractere. Para o computador, a letra "A" é
               <b>65 em decimal</b> ou <b>41 em hexadecimal</b> ou
@@ -218,7 +215,7 @@
               Vamos converter o número 1000001, ou seja, a letra "A". Para fazer
               isso basta:
             </p>
-            <ul>
+            <ul class="fst-normal">
               <li>
                 Começar da direita para a esquerda escolher um digito de cada
                 vez e anotá-lo;
@@ -652,7 +649,7 @@
         </div>
         <div class="img">
           <img
-            id="asspg"
+            id="java"
             alt="java"
             src="https://www.codegrepper.com/codeimages/reverse-string-in-java-using-scanner.png"
           />
@@ -702,16 +699,26 @@
           <h4 id="bib">
             <ul>
               <li>
-                <a href=" https://pt.wikipedia.org/wiki/Linguagem_assembly"
+                <a
+                  href=" https://pt.wikipedia.org/wiki/Linguagem_assembly"
                   >https://pt.wikipedia.org/wiki/Linguagem_assembly</a
                 >, acedido em 24/09/2022
               </li>
               <br />
               <li>
-                <a
+                <a id="justify"
                   href="https://pt.wikipedia.org/wiki/C_%28linguagem_de_programa%C3%A7%C3%A3o%29"
                   >https://pt.wikipedia.org/wiki/C_%28linguagem_de_programa%C3%A7%C3%A3o%29</a
                 >, acedido em 24/09/2022
+                <!--script to adjust the link into the box (made especially for the school pcs- 800px-600px)-->
+                <script>
+                  if (screen.width < 1366) {
+                    document.getElementById("justify").innerHTML =
+                      "https://pt.wikipedia.org/wiki/C_%28linguagem_de_programa" +
+                      "<br>" +
+                      "%C3%A7%C3%A3o%29";
+                  }
+                </script>
               </li>
               <br />
               <li>

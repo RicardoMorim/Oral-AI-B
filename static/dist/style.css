@@ -24,6 +24,15 @@
   z-index: 1;
 }
 
+@media (max-width: 900px) {
+  #g {
+    position: absolute;
+    margin-top: 1.5cm;
+    padding-top: 0cm;
+    top: 54.8%;
+    margin-left: 0.6cm;
+  }
+}
 
 
 
