@@ -57,14 +57,41 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  document.querySelector(".sub").addEventListener("click", function () {
-    let answer = document.querySelector(".answer");
+  //quarta escolha multipla
+  //tratar das corretas
+  let correct3 = document.querySelector(".correct3");
 
-    answer.value == "Assembly" || answer.value == "assembly" || answer.value == "Assemble" || answer.value == "assemble"
-      ? (document.querySelector("#feedbackans").innerHTML = "Correct!")
-      : (document.querySelector("#feedbackans").innerHTML = "Incorrect!");
-      answer.value == "Assembly" || answer.value == "assembly" || answer.value == "Assemble" || answer.value == "assemble"
-      ? (answer.style.backgroundColor = "green")
-      : (answer.style.backgroundColor = "red");
+  correct3.addEventListener("click", function () {
+    correct3.style.backgroundColor = "green";
+    document.querySelector("#feedback3").innerHTML = "Correct!";
   });
+
+  //verificar erradas
+  let incorrects3 = document.querySelectorAll(".incorrect3");
+
+  for (let i = 0; i < incorrects.length; i++) {
+    incorrects3[i].addEventListener("click", function () {
+      incorrects3[i].style.backgroundColor = "red";
+      document.querySelector("#feedback3").innerHTML = "Incorrect!";
+    });
+  }
+
+  //quinta escolha multipla
+  //tratar das corretas
+  let correct4 = document.querySelector(".correct4");
+
+  correct4.addEventListener("click", function () {
+    correct4.style.backgroundColor = "green";
+    document.querySelector("#feedback4").innerHTML = "Correct!";
+  });
+
+  //verificar erradas
+  let incorrects4 = document.querySelectorAll(".incorrect4");
+
+  for (let i = 0; i < incorrects.length; i++) {
+    incorrects4[i].addEventListener("click", function () {
+      incorrects4[i].style.backgroundColor = "red";
+      document.querySelector("#feedback4").innerHTML = "Incorrect!";
+    });
+  }
 });

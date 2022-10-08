@@ -458,7 +458,6 @@ h3 {
   display: table-cell;
   position: absolute;
   right: 3%;
-
   float: left;
   width: 40vw;
   height: 100vh;
@@ -516,8 +515,8 @@ h3 {
   right: 7%;
   padding-top: 2cm;
   float: left;
-  width: 30vw;
-  height: 75vh;
+  width: 35vw;
+  height: 80vh;
 }
 #C {
   display: table-cell;
