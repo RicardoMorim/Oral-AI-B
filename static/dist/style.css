@@ -1,0 +1,35 @@
+#g {
+  padding-left: 1cm;
+  margin-top: 0.5cm;
+}
+#grid {
+  color: white;
+  display: grid;
+  width: 150px;
+  grid-auto-rows: 30px;
+  font-size: 1.5em;
+  font-family: "Bungee", cursive;
+  right: 3%;
+}
+#grid > span {
+  background-color: darkblue;
+  line-height: 30px;
+  text-align: center;
+  transform: skewY(11deg);
+}
+
+#grid > span:nth-child(2n) {
+  background-color: #3333ff;
+  transform: skewY(-11deg);
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  #g {
+    position: absolute;
+    margin-top: 1.5cm;
+    padding-top: 0cm;
+    top: 54.8%;
+    margin-left: 0.6cm;
+  }
+}
