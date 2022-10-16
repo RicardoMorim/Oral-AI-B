@@ -33,3 +33,10 @@
     margin-left: 0.6cm;
   }
 }
+@media (max-width: 1400px) {
+  #g {
+    position: absolute;
+    top: 55%;
+    margin-left: 0.6cm;
+  }
+}

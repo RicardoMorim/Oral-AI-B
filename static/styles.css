@@ -462,6 +462,14 @@ h3 {
   width: 40vw;
   height: 100vh;
 }
+#sql {
+  display: table-cell;
+  position: absolute;
+  right: 3%;
+  float: left;
+  width: 40vw;
+  height: 65vh;
+}
 
 #assp {
   display: table-cell;
@@ -1320,15 +1328,22 @@ h3 {
     width: 40vw;
     height: 100vh;
   }
-
+  #sql {
+    display: table-cell;
+    position: absolute;
+    right: 3%;
+    float: left;
+    width: 42vw;
+    height: 75vh;
+  }
   #assp {
     display: table-cell;
     position: absolute;
     right: 3%;
     padding-top: 2cm;
     float: left;
-    width: 40vw;
-    height: 80vh;
+    width: 30vw;
+    height: 70vh;
   }
   #asspg {
     display: table-cell;
