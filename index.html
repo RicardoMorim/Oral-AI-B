@@ -1,752 +1,687 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <!--Site created by: Ricardo Morim-->
-    <!--This site was made to support me at my Informatic Aplications B oral speech. 
+
+<head>
+  <!--Site created by: Ricardo Morim-->
+  <!--This site was made to support me at my Informatic Aplications B oral speech. 
         Its a very simple site, but as I'm the only one who can code there its pretty good compared with what the rest of the class is going to do (powerpoints),
     so im pretty proud of my self to do this. 
         NOTE: We did not yet leaned anything about coding in school so they arent supposed to know how to code-->
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trabalho de AI B</title>
-    <!-- http://getbootstrap.com/docs/5.1/ -->
-    <link
-      crossorigin="anonymous"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      rel="stylesheet"
-    />
-    <script
-      crossorigin="anonymous"
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    ></script>
-    <script href="static/script.js"></script>
-    <link rel="stylesheet" href="static/styles.css" />
-    <link rel="stylesheet" href="static/dist/style.css" />
-    <link rel="stylesheet" href="static/animate.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-  </head>
-  <body>
-    <nav class="bg-light border navbar navbar-expand-md navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/"
-          ><span class="blue">A</span><span class="red">P</span
-          ><span class="blue">L</span><span class="yellow">I</span
-          ><span class="green">C</span><span class="black">A</span
-          ><span class="blue">Ç</span><span class="green">Õ</span
-          ><span class="yellow">E</span><span class="black">S</span
-          ><span class="red"> Informáticas</span><span class="blue"> B</span>
-        </a>
-        <button
-          aria-controls="navbar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          class="navbar-toggler"
-          data-bs-target="#navbar"
-          data-bs-toggle="collapse"
-          type="button"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar">
-          <ul class="navbar-nav me-auto mt-2">
-            <li class="nav-item" id="navred">
-              <!--Linked list da nav-bar-->
-              <a class="nav-link" href="https://escolahenriquemedina.org">
-                ESHM
-              </a>
-            </li>
-            <li class="nav-item" id="navred">
-              <a class="nav-link" href="#"> 2022/2023 </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trabalho de AI B</title>
+  <!-- http://getbootstrap.com/docs/5.1/ -->
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet" />
+  <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"></script>
+  <script href="static/script.js"></script>
+  <link rel="stylesheet" href="static/styles.css" />
+  <link rel="stylesheet" href="static/dist/style.css" />
+  <link rel="stylesheet" href="static/animate.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
 
-    <div class="image">
-      <div class="ribbon wow animate__fadeIn">
-        As linguagens de programação na atualidade
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
+<body>
+  <nav class="bg-light border navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"><span class="blue">A</span><span class="red">P</span><span
+          class="blue">L</span><span class="yellow">I</span><span class="green">C</span><span
+          class="black">A</span><span class="blue">Ç</span><span class="green">Õ</span><span
+          class="yellow">E</span><span class="black">S</span><span class="red"> Informáticas</span><span class="blue">
+          B</span>
+      </a>
+      <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+        data-bs-target="#navbar" data-bs-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav me-auto mt-2">
+          <li class="nav-item" id="navred">
+            <!--Linked list da nav-bar-->
+            <a class="nav-link" href="https://escolahenriquemedina.org">
+              ESHM
+            </a>
+          </li>
+          <li class="nav-item" id="navred">
+            <a class="nav-link" href="#"> 2022/2023 </a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </nav>
 
-      <img
-        class="wow animate__fadeInLeft"
-        id="imag"
-        src="pictures/escola.jpg"
-        alt="Escola"
-      />
-
-      <div id="diam" class="main_div wow animate__fadeIn animate__delay-1s">
-        <a id="asd" class="rotate" href="https://github.com/RicardoMorim/"
-          ><span class="button dimond">Ricardo Morim nº24 12ºC</span></a
-        >
-      </div>
-
-      <div id="g" class="wow animate__fadeInLeft">
-        <h1 id="grid" data-splitting>Sandra Lima Cruz Dias</h1>
-      </div>
-      <img
-        class="wow animate__fadeIn animate__delay-1s"
-        id="img"
-        src="pictures/imagens de programação web - Imagem png com fundo removido transparente gratis para baixar (1).png"
-        alt="Capa"
-      />
+  <div class="image">
+    <div class="ribbon wow animate__fadeIn">
+      As linguagens de programação na atualidade
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
     </div>
 
-    <section class="wow animate__fadeInLeft">
-      <div class="block">
-        <div class="indice">
-          <h2 id="titleI" class="rainbow">Índice:</h2>
-          <br />
-          <h4>
+    <img class="wow animate__fadeInLeft" id="imag" src="pictures/escola.jpg" alt="Escola" />
+
+    <div id="diam" class="main_div wow animate__fadeIn animate__delay-1s">
+      <a id="asd" class="rotate" href="https://github.com/RicardoMorim/"><span class="button dimond">Ricardo Morim nº24
+          12ºC</span></a>
+    </div>
+
+    <div id="g" class="wow animate__fadeInLeft">
+      <h1 id="grid" data-splitting>Sandra Lima Cruz Dias</h1>
+    </div>
+    <img class="wow animate__fadeIn animate__delay-1s" id="img"
+      src="pictures/imagens de programação web - Imagem png com fundo removido transparente gratis para baixar (1).png"
+      alt="Capa" />
+  </div>
+
+  <section class="wow animate__fadeInLeft">
+    <div class="block">
+      <div class="indice">
+        <h2 id="titleI" class="rainbow">Índice:</h2>
+        <br />
+        <h4>
+          <ul>
+            <li>Introdução</li>
+            <li>O que é uma linguagem de programação</li>
+            <li>As linguagens de programação utilizadas na atualidade</li>
             <ul>
-              <li>Introdução</li>
-              <li>O que é uma linguagem de programação</li>
-              <li>As linguagens de programação utilizadas na atualidade</li>
-              <ul>
-                <li>C</li>
-                <li>Python</li>
-                <li>SQL</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>C++</li>
-                <li>Java</li>
-              </ul>
-              <li>Conclusão</li>
-              <li>Bibliografia</li>
+              <li>C</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>C++</li>
+              <li>Java</li>
             </ul>
-          </h4>
-        </div>
+            <li>Conclusão</li>
+            <li>Bibliografia</li>
+          </ul>
+        </h4>
+      </div>
+    </div>
+  </section>
+
+  <br /><br /><br /><br />
+  <section class="wow animate__fadeInRight">
+    <div>
+      <h1 id="title"><b>Introdução</b></h1>
+    </div>
+
+    <section id="c">
+      <div class="container" id="co">
+        <h4 id="con" class="fst-normal">
+          <p>
+            Como já vimos, neste trabalho irei falar sobre linguagens de
+            programção, como funcionam, e para o que são mais usadas.
+          </p>
+          <p>
+            Este tema ajudou-me a saber mais sobre a parte formal das
+            linguagens e, para quem nunca tinha visto uma linha de código à
+            frente, acho que vai notar uma grande mudança com a realização
+            deste trabalho, pois verá como fica o código de várias linguagens,
+            e como se pode utiizar várias em conjunto para um fim comum,
+            utilizando os pontos fortes de cada uma, e a importância de
+            utilizar código de outras pessoas chamado como "<i>frameworks</i>"
+            , "<i>libraries</i>" ou "<i>plugins</i>".
+          </p>
+          <p>
+            Tem um ditado que David Malan disse várias vezes durante o meu
+            ultimo curso CS50X "<i>You dont need to keep inventing the weel</i>", ou em Português, "tu não precisas de
+            estar constantemente a
+            inventar a roda". E isto aplica-se muito na informatica pois é
+            muito comum aproveitar código de outros ficheiros, ou até de
+            outras pessoas.
+          </p>
+          <p>
+            Em cada uma das linguagens, irei demonstrar pontos fortes, pontos
+            fracos, e irei falar um pouco sobre para que serve, ou para que é
+            utilizada, e irei demonstrar um pouco de código escrito nessa
+            linguagem.
+          </p>
+        </h4>
       </div>
     </section>
+  </section>
 
-    <br /><br /><br /><br />
-    <section class="wow animate__fadeInRight">
-      <div>
-        <h1 id="title"><b>Introdução</b></h1>
+  <br /><br /><br />
+
+  <section class="wow animate__fadeInLeft">
+    <div class="container">
+      <h1 id="title" class="text-center">
+        <b>O que é uma linguagem de programação</b>
+      </h1>
+    </div>
+    <section class="lcorpo">
+      <div class="Linguagem" id="ltxt">
+        <h4 id="lang" class="fst-normal">
+          <p class="fst-normal">
+            Uma linguagem de programação é o que um programador utiliza para
+            dar ordens ao computador. Podendo ser utilizadas desde para
+            automatizar tarefas difícieis até para o lazer. Os computadores
+            junto com as linguagens mudaram a forma com que vivemos o mundo!
+          </p>
+
+          <p class="fst-normal">
+            Ou seja, as linguagens de programação servem para se criar o que
+            chamamos de <i>software</i>, ou seja, para "dar ordens" aos
+            componentes físicos, ou hardware
+          </p>
+          <p class="fst-normal">
+            No inicio apenas existia o <b>código binário</b> que como podemos
+            ver nas tabelas ao lado os numeros podem ser representados de
+            várias maneiras, na programação os mais utilizados são o binário,
+            o decimal, e o hexadecimal
+          </p>
+          <p class="fst-normal">
+            A tabela <i>ASCII</i> demonstra como o computador representa cada
+            caractere. Para o computador, a letra "A" é
+            <b>65 em decimal</b> ou <b>41 em hexadecimal</b> ou
+            <b>1000001 em binario</b>.
+          </p>
+          <p class="fst-normal">
+            Para converter um número de binário para decimal é bastante fáci.
+            Vamos converter o número 1000001, ou seja, a letra "A". Para fazer
+            isso basta:
+          </p>
+          <ul class="fst-normal">
+            <li>
+              Começar da direita para a esquerda escolher um digito de cada
+              vez e anotá-lo;
+            </li>
+            <li>
+              Se for um 1, fazer 2 elevado à ordem do digito -1 (por exemplo
+              se for o primeiro digito fica 2^0 se for o segundo fica 2^1
+              etc.) e anotar o valor. Se for um 0 não se faz nada;
+            </li>
+            <li>Repetir esse processo até ao fim do número</li>
+            <li>Somar todos os valores anotados.</li>
+          </ul>
+          <p class="fst-normal">
+            Para o número 1000001 obteríamos <b>2^0+2^6</b> chegando assim ao
+            resultado obtido <b>65</b>.
+          </p>
+        </h4>
       </div>
-
-      <section id="c">
-        <div class="container" id="co">
-          <h4 id="con" class="fst-normal">
-            <p>
-              Como já vimos, neste trabalho irei falar sobre linguagens de
-              programção, como funcionam, e para o que são mais usadas.
-            </p>
-            <p>
-              Este tema ajudou-me a saber mais sobre a parte formal das
-              linguagens e, para quem nunca tinha visto uma linha de código à
-              frente, acho que vai notar uma grande mudança com a realização
-              deste trabalho, pois verá como fica o código de várias linguagens,
-              e como se pode utiizar várias em conjunto para um fim comum,
-              utilizando os pontos fortes de cada uma, e a importância de
-              utilizar código de outras pessoas chamado como "<i>frameworks</i>"
-              , "<i>libraries</i>" ou "<i>plugins</i>".
-            </p>
-            <p>
-              Tem um ditado que David Malan disse várias vezes durante o meu
-              ultimo curso CS50X "<i>You dont need to keep inventing the weel</i
-              >", ou em Português, "tu não precisas de estar constantemente a
-              inventar a roda". E isto aplica-se muito na informatica pois é
-              muito comum aproveitar código de outros ficheiros, ou até de
-              outras pessoas.
-            </p>
-            <p>
-              Em cada uma das linguagens, irei demonstrar pontos fortes, pontos
-              fracos, e irei falar um pouco sobre para que serve, ou para que é
-              utilizada, e irei demonstrar um pouco de código escrito nessa
-              linguagem.
-            </p>
-          </h4>
-        </div>
-      </section>
-    </section>
-
-    <br /><br /><br />
-
-    <section class="wow animate__fadeInLeft">
-      <div class="container">
-        <h1 id="title" class="text-center">
-          <b>O que é uma linguagem de programação</b>
-        </h1>
+      <div class="img">
+        <img id="cb" alt="código binário"
+          src="https://th.bing.com/th/id/OIP.k0Tjp_ECOg_fLXF4fUQ3BwHaEJ?pid=ImgDet&rs=1" />
       </div>
-      <section class="lcorpo">
-        <div class="Linguagem" id="ltxt">
-          <h4 id="lang" class="fst-normal">
-            <p class="fst-normal">
-              Uma linguagem de programação é o que um programador utiliza para
-              dar ordens ao computador. Podendo ser utilizadas desde para
-              automatizar tarefas difícieis até para o lazer. Os computadores
-              junto com as linguagens mudaram a forma com que vivemos o mundo!
-            </p>
-
-            <p class="fst-normal">
-              Ou seja, as linguagens de programação servem para se criar o que
-              chamamos de <i>software</i>, ou seja, para "dar ordens" aos
-              componentes físicos, ou hardware
-            </p>
-            <p class="fst-normal">
-              No inicio apenas existia o <b>código binário</b> que como podemos
-              ver nas tabelas ao lado os numeros podem ser representados de
-              várias maneiras, na programação os mais utilizados são o binário,
-              o decimal, e o hexadecimal
-            </p>
-            <p class="fst-normal">
-              A tabela <i>ASCII</i> demonstra como o computador representa cada
-              caractere. Para o computador, a letra "A" é
-              <b>65 em decimal</b> ou <b>41 em hexadecimal</b> ou
-              <b>1000001 em binario</b>.
-            </p>
-            <p class="fst-normal">
-              Para converter um número de binário para decimal é bastante fáci.
-              Vamos converter o número 1000001, ou seja, a letra "A". Para fazer
-              isso basta:
-            </p>
-            <ul class="fst-normal">
-              <li>
-                Começar da direita para a esquerda escolher um digito de cada
-                vez e anotá-lo;
-              </li>
-              <li>
-                Se for um 1, fazer 2 elevado à ordem do digito -1 (por exemplo
-                se for o primeiro digito fica 2^0 se for o segundo fica 2^1
-                etc.) e anotar o valor. Se for um 0 não se faz nada;
-              </li>
-              <li>Repetir esse processo até ao fim do número</li>
-              <li>Somar todos os valores anotados.</li>
-            </ul>
-            <p class="fst-normal">
-              Para o número 1000001 obteríamos <b>2^0+2^6</b> chegando assim ao
-              resultado obtido <b>65</b>.
-            </p>
-          </h4>
-        </div>
-        <div class="img">
-          <img
-            id="cb"
-            alt="código binário"
-            src="https://th.bing.com/th/id/OIP.k0Tjp_ECOg_fLXF4fUQ3BwHaEJ?pid=ImgDet&rs=1"
-          />
-        </div>
-        <div class="img" id="iascii">
-          <img
-            id="ascii"
-            alt="ascii table"
-            src="https://th.bing.com/th/id/R.27e0c6b8cc9db3828acb4f39c514a132?rik=yETRTg5Dqs6%2bjw&pid=ImgRaw&r=0"
-          />
-        </div>
-      </section>
-    </section>
-
-    <br /><br /><br />
-    <section class="wow animate__fadeInLeft">
-      <div id="subtitle">
-        <h3><b>Linguagem C</b></h3>
+      <div class="img" id="iascii">
+        <img id="ascii" alt="ascii table"
+          src="https://th.bing.com/th/id/R.27e0c6b8cc9db3828acb4f39c514a132?rik=yETRTg5Dqs6%2bjw&pid=ImgRaw&r=0" />
       </div>
-
-      <section class="lcorpo">
-        <div class="container" id="ltxt">
-          <h4 id="lang" class="fst-normal">
-            <p>
-              A linguagem C é uma linguagem de programação compilada de
-              propósito geral. C é uma das linguagens de programação mais
-              populares, mesmo tendo sido criada a muito tempo, e mesmo sendo
-              difícil de se aprender. Um dos motivos para isto é a grande
-              otimização desta linguagem, que compensa as dificuldades.
-            </p>
-            <p>
-              C é utilizado em várias áreas, como a criação de jogos, criação de
-              sistemas operacionais, e qualquer tipo de aplicação que requira um
-              rápido tempo de resposta.
-            </p>
-            <p>Os maiores pontos fortes são</p>
-            <ul>
-              <li>Rapidez;</li>
-              <li>Versatilidade;</li>
-              <li>Grande comunidade;</li>
-              <li>Muitas bibliotecas de código;</li>
-            </ul>
-            <p>
-              Os pontos negativos desta linguagem são todos à base da
-              complexidade da mesma.
-            </p>
-          </h4>
-        </div>
-        <div class="img">
-          <img id="C" alt="código binário" src="pictures/Clang.png" />
-        </div>
-      </section>
     </section>
+  </section>
 
-    <br /><br /><br />
-    <br /><br />
-    <section class="wow animate__fadeInRight">
-      <div id="subtitle">
-        <h3><b>Python</b></h3>
+  <br /><br /><br />
+  <section class="wow animate__fadeInLeft">
+    <div id="subtitle">
+      <h3><b>Linguagem C</b></h3>
+    </div>
+
+    <section class="lcorpo">
+      <div class="container" id="ltxt">
+        <h4 id="lang" class="fst-normal">
+          <p>
+            A linguagem C é uma linguagem de programação compilada de
+            propósito geral. C é uma das linguagens de programação mais
+            populares, mesmo tendo sido criada a muito tempo, e mesmo sendo
+            difícil de se aprender. Um dos motivos para isto é a grande
+            otimização desta linguagem, que compensa as dificuldades.
+          </p>
+          <p>
+            C é utilizado em várias áreas, como a criação de jogos, criação de
+            sistemas operacionais, e qualquer tipo de aplicação que requira um
+            rápido tempo de resposta.
+          </p>
+          <p>Os maiores pontos fortes são</p>
+          <ul>
+            <li>Rapidez;</li>
+            <li>Versatilidade;</li>
+            <li>Grande comunidade;</li>
+            <li>Muitas bibliotecas de código;</li>
+          </ul>
+          <p>
+            Os pontos negativos desta linguagem são todos à base da
+            complexidade da mesma.
+          </p>
+        </h4>
       </div>
-
-      <section class="lcorpo">
-        <div class="container" id="ltxt">
-          <h4 id="lang1" class="fst-normal">
-            <p>
-              Python é uma linguagem de programação de alto nível, interpretada,
-              imperativa, orientada a objetos, funcional e de tipagem dinâmica.
-            </p>
-            <p>
-              Python está constantemente no topo da tabela das linguagens mais
-              utilizadas, maioritariamente graças à facilidade de aprendizagem e
-              a facilidade de compreensão. Ulizada maioritariamente para:
-            </p>
-            <ul>
-              <li>desenvolvimento Web;</li>
-              <li>Desenvimento de jogos;</li>
-              <li>Inteligência artificial e "<i>Machine Learning</i>";</li>
-              <li>Visualização de dados e manuseamento de dados.</li>
-            </ul>
-            <p>Os pontos fortes desta linguagem são:</p>
-            <ul>
-              <li>Facilidade de aprendizagem;</li>
-              <li>Facilidade de leitura de código;</li>
-              <li>Grande comunidade;</li>
-              <li>Versatilidade.</li>
-            </ul>
-            <p>
-              O maior ponto fraco desta linguagem é que por ser interpretada é
-              mais lenta do as compiladas.
-            </p>
-            Para quem se estiver a perguntar como esse site funciona aqui está
-            uma <a href="./site.png">print</a> do site.
-          </h4>
-        </div>
-        <div class="img">
-          <img id="ass" alt="código binário" src="pictures/python.png" />
-        </div>
-      </section>
-    </section>
-
-    <br /><br /><br />
-    <section class="wow animate__fadeInLeft">
-      <div id="subtitle">
-        <h3><b>SQL</b></h3>
+      <div class="img">
+        <img id="C" alt="código binário" src="pictures/Clang.png" />
       </div>
-
-      <section class="lcorpo">
-        <div class="container" id="ltxt">
-          <h4 id="lang1" class="fst-normal">
-            <p>
-              Structured Query Language, ou Linguagem de Consulta Estruturada ou
-              SQL, é a linguagem de pesquisa declarativa padrão para banco de
-              dados relacional (base de dados relacional).
-            </p>
-            <p>
-              Esta linguagem serve basicamente para armazenar e ler dados. Esta
-              armazena os dados num arquivo em forma de tabelas e o utilziador
-              pode especificar que coluna(s) ou linha(s) da tabela quer que
-              sejam exibidas. No site que eu demonstrei ao falar de python
-              utiliza esta linguagem para armazenar e ler os aniversários e os
-              nomes das pessoas.
-            </p>
-            <p>
-              No site demonstrado utilizei o
-              <a href="pictures/SQL 1.png">seguinte</a> ficheiro SQL.
-            </p>
-          </h4>
-        </div>
-        <div class="img">
-          <img id="sql" alt="código binário" src="pictures/Sql.png" />
-        </div>
-      </section>
     </section>
-    <br /><br /><br /><br /><br />
-    <section class="wow animate__fadeInRight">
-      <div id="subtitle">
-        <h3><b>Javascript</b></h3>
+  </section>
+
+  <br /><br /><br />
+  <br /><br />
+  <section class="wow animate__fadeInRight">
+    <div id="subtitle">
+      <h3><b>Python</b></h3>
+    </div>
+
+    <section class="lcorpo">
+      <div class="container" id="ltxt">
+        <h4 id="lang1" class="fst-normal">
+          <p>
+            Python é uma linguagem de programação de alto nível, interpretada,
+            imperativa, orientada a objetos, funcional e de tipagem dinâmica.
+          </p>
+          <p>
+            Python está constantemente no topo da tabela das linguagens mais
+            utilizadas, maioritariamente graças à facilidade de aprendizagem e
+            a facilidade de compreensão. Ulizada maioritariamente para:
+          </p>
+          <ul>
+            <li>desenvolvimento Web;</li>
+            <li>Desenvimento de jogos;</li>
+            <li>Inteligência artificial e "<i>Machine Learning</i>";</li>
+            <li>Visualização de dados e manuseamento de dados.</li>
+          </ul>
+          <p>Os pontos fortes desta linguagem são:</p>
+          <ul>
+            <li>Facilidade de aprendizagem;</li>
+            <li>Facilidade de leitura de código;</li>
+            <li>Grande comunidade;</li>
+            <li>Versatilidade.</li>
+          </ul>
+          <p>
+            O maior ponto fraco desta linguagem é que por ser interpretada é
+            mais lenta do as compiladas.
+          </p>
+          Para quem se estiver a perguntar como esse site funciona aqui está
+          uma <a href="./site.png">print</a> do site.
+        </h4>
       </div>
-
-      <section class="lcorpo">
-        <div class="container" id="ltxt">
-          <h4 id="lang" class="fst-normal">
-            <p>
-              JavaScript (frequentemente abreviado como JS) é uma linguagem de
-              programação de alto nível, bastante fácil de aprender, porém
-              bastante poderosa.
-            </p>
-            <p>
-              Juntamente com HTML e CSS, o JavaScript é uma das três principais
-              tecnologias da World Wide Web. JavaScript permite páginas da Web
-              interativas e, portanto, é uma parte essencial dos aplicativos da
-              web. A grande maioria dos sites usa, e todos os principais
-              navegadores têm um mecanismo JavaScript dedicado para executá-lo.
-            </p>
-            <p>
-              Foi a primeira linguagem que eu aprendi, e é certamente uma
-              linguagem que eu recomendo a qualquer um aprender, pois esta
-              linguagem é bastante versátil, ganhando espaço até no mercado de
-              telemóveis, fácil, rápida, tem bastantes funções incorporadas para
-              realizar tarefas, e está consistentemente no top 3 das linguagens
-              mais populares do mundo, atualmente sendo a mais popular.
-            </p>
-            <p>
-              No seu início era apenas utilizada para "<i>Front-end</i>" dos
-              web-sites porém com o aparecimento de "<i>Frameworks</i>" como
-              "node.js"e "npm.js" (que inclusive, estou a utilizar para dar
-              "<i>host</i>" neste web-site) javascript passou a também ser
-              utilizado no "<i>Back-end</i>" dos web-sites
-            </p>
-            <p>Os pontos fortes desta linguagem são:</p>
-            <ul>
-              <li>Versatilidade;</li>
-              <li>Enorme comunidade;</li>
-              <li>
-                Muitas "<i>Frameworks</i>", "<i>Plugins</i>" e projetos
-                "<i>open-source</i>".
-              </li>
-            </ul>
-          </h4>
-        </div>
-        <div class="img">
-          <img id="js" alt="código binário" src="pictures/Javascript.png" />
-        </div>
-      </section>
-      <br /><br /><br />
-    </section>
-
-    <br /><br /><br />
-    <section class="wow animate__fadeInLeft">
-      <div id="subtitle">
-        <h3><b>HTML</b></h3>
+      <div class="img">
+        <img id="ass" alt="código binário" src="pictures/python.png" />
       </div>
-
-      <section class="lcorpo">
-        <div class="container" id="ltxt">
-          <h4 id="lang" class="fst-normal">
-            <p>
-              HTML ou "<i>Hypertext Markup Language</i>" (significa "<i
-                >Linguagem de marcação de Hipertexto</i
-              >"), embora não seja considerado uma linguagem é bastante
-              utilizado para a criação da "<i>Front-end</i>" dos websites.
-            </p>
-            <p>
-              Não é considerado uma linguagem pois não permite adicionar lógica
-              a um código, com a definição de linguagem percebemos que para se
-              enquadrarem nesse tipo, o "candidato" teria de poder dar ordens
-              aos comopnentes físicos, coisa que não acontece com o HTML, pois
-              este apenas serve para criar a página da frente dos websites, não
-              dando dinâmica nenhuma aos mesmos.
-            </p>
-            <p>
-              Sem a utilização de uma linguagem diferente os sites não teriam
-              dinâmica nenhuma e seriam <b>MUITO</b> aborrecidos, outra
-              "linguagem" que ajuda nisso é "CSS", porém esta também não pode
-              ser considerada uma linguagem como iremos ver a seguir.
-            </p>
-            <p>
-              <b>NOTA:</b> Na imagem ao lado, as palavras brancas, são de uma
-              sintaxe chamada "<i>Jinja</i>" utilizada pela frameword Flask
-              escrita em Python.
-            </p>
-          </h4>
-        </div>
-        <div class="img">
-          <img id="asspl" alt="código binário" src="pictures/HTML.png" />
-        </div>
-      </section>
     </section>
-    <br /><br /><br />
-    <section class="wow animate__fadeInRight">
-      <div id="subtitle">
-        <h3><b>CSS</b></h3>
+  </section>
+
+  <br /><br /><br />
+  <section class="wow animate__fadeInLeft">
+    <div id="subtitle">
+      <h3><b>SQL</b></h3>
+    </div>
+
+    <section class="lcorpo">
+      <div class="container" id="ltxt">
+        <h4 id="lang1" class="fst-normal">
+          <p>
+            Structured Query Language, ou Linguagem de Consulta Estruturada ou
+            SQL, é a linguagem de pesquisa declarativa padrão para banco de
+            dados relacional (base de dados relacional).
+          </p>
+          <p>
+            Esta linguagem serve basicamente para armazenar e ler dados. Esta
+            armazena os dados num arquivo em forma de tabelas e o utilziador
+            pode especificar que coluna(s) ou linha(s) da tabela quer que
+            sejam exibidas. No site que eu demonstrei ao falar de python
+            utiliza esta linguagem para armazenar e ler os aniversários e os
+            nomes das pessoas.
+          </p>
+          <p>
+            No site demonstrado utilizei o
+            <a href="pictures/SQL 1.png">seguinte</a> ficheiro SQL.
+          </p>
+        </h4>
       </div>
-
-      <section class="lcorpo">
-        <div class="container" id="ltxt">
-          <h4 id="lang" class="fst-normal">
-            <p>
-              CSS ou "<i>Cascating Style Sheets</i>" é um mecanismo para
-              adicionar estilo (cores, fontes, espaçamento, etc.) a um documento
-              web, isto é, esta "linguagem" "apenas" serve para colocar o HTML
-              "bonito", embora só faça isso, ela é bastante importante pois sem
-              ela os site seriam muito sem estilo, tudo igual e sem graça, não
-              haveria cor nem formatação apenas texto.
-            </p>
-            <p>Alguns dos pontos fortes do CSS são:</p>
-            <ul>
-              <li>Fácil de aprender;</li>
-              <li>Estruturada de forma em que o codigo é reutilizável;</li>
-            </ul>
-            <p>
-              A programação Web é praticamente composta apenas por CSS, HTML e
-              javascript, sabendo estes três componentes já é possível criar-se
-              um website bastante bonito, estruturado e responsivo.
-            </p>
-          </h4>
-        </div>
-
-        <div class="img">
-          <img id="asspp" alt="CSS" src="pictures/CSS.png" />
-        </div>
-      </section>
-    </section>
-    <br /><br /><br />
-
-    <section class="wow animate__fadeInLeft">
-      <div id="subtitle">
-        <h3><b>C++</b></h3>
+      <div class="img">
+        <img id="sql" alt="código binário" src="pictures/Sql.png" />
       </div>
-
-      <section class="lcorpo">
-        <div class="container" id="ltxt">
-          <h4 id="lang" class="fst-normal">
-            <p>
-              C++ é uma linguagem orientada e compilada de propósito geral. O
-              seu maior uso é para a criação de video jogos, porém tambem tem
-              outras utilidades como <i>Web Development Server Side</i>, ou
-              seja, criação de código do lado do servidor, e compiladores,
-              editores, ferramentas de programação e programas de redes.
-            </p>
-            <p>
-              Esta linguagem como ja mencionei foi baseada em C (na verdade, foi
-              tão baseada em C que na sua criação - 1980 - era chamada de "<i
-                >C with classes</i
-              >", tendo depois mudado para C++), e por isso herdou os seus
-              "cons" e os seus "pros" como:
-            </p>
-            <ul>
-              <li>
-                Bastantes bibliotecas online para adicionar ao seu código;
-              </li>
-              <li>Bastante rápida;</li>
-              <li>versátil</li>
-            </ul>
-            <p>Alguns dos contras são:</p>
-            <ul>
-              <li>Dificil de aprender;</li>
-              <li>Dificil de implementar;</li>
-              <li>Dificil leitura e compreensão do codigo de outra pessoa;</li>
-              <li>
-                A rapidez maior parte das vezes não é necessária, não
-                compensando a dificuldade
-              </li>
-            </ul>
-          </h4>
-        </div>
-
-        <div class="img">
-          <img
-            id="ass"
-            alt="Reverse a string in C++"
-            src="https://appdividend.com/wp-content/uploads/2019/06/JavaScript-Array-Reverse-Example-JS-Array-Reverse-Method.png"
-          />
-        </div>
-      </section>
     </section>
-    <br /><br /><br />
-    <section class="wow animate__fadeInRight">
-      <div id="subtitle">
-        <h3><b>Java</b></h3>
+  </section>
+  <br /><br /><br /><br /><br />
+  <section class="wow animate__fadeInRight">
+    <div id="subtitle">
+      <h3><b>Javascript</b></h3>
+    </div>
+
+    <section class="lcorpo">
+      <div class="container" id="ltxt">
+        <h4 id="lang" class="fst-normal">
+          <p>
+            JavaScript (frequentemente abreviado como JS) é uma linguagem de
+            programação de alto nível, bastante fácil de aprender, porém
+            bastante poderosa.
+          </p>
+          <p>
+            Juntamente com HTML e CSS, o JavaScript é uma das três principais
+            tecnologias da World Wide Web. JavaScript permite páginas da Web
+            interativas e, portanto, é uma parte essencial dos aplicativos da
+            web. A grande maioria dos sites usa, e todos os principais
+            navegadores têm um mecanismo JavaScript dedicado para executá-lo.
+          </p>
+          <p>
+            Foi a primeira linguagem que eu aprendi, e é certamente uma
+            linguagem que eu recomendo a qualquer um aprender, pois esta
+            linguagem é bastante versátil, ganhando espaço até no mercado de
+            telemóveis, fácil, rápida, tem bastantes funções incorporadas para
+            realizar tarefas, e está consistentemente no top 3 das linguagens
+            mais populares do mundo, atualmente sendo a mais popular.
+          </p>
+          <p>
+            No seu início era apenas utilizada para "<i>Front-end</i>" dos
+            web-sites porém com o aparecimento de "<i>Frameworks</i>" como
+            "node.js"e "npm.js" (que inclusive, estou a utilizar para dar
+            "<i>host</i>" neste web-site) javascript passou a também ser
+            utilizado no "<i>Back-end</i>" dos web-sites
+          </p>
+          <p>Os pontos fortes desta linguagem são:</p>
+          <ul>
+            <li>Versatilidade;</li>
+            <li>Enorme comunidade;</li>
+            <li>
+              Muitas "<i>Frameworks</i>", "<i>Plugins</i>" e projetos
+              "<i>open-source</i>".
+            </li>
+          </ul>
+        </h4>
       </div>
-
-      <section class="lcorpo">
-        <div class="container" id="ltxt">
-          <h4 id="lang" class="fst-normal">
-            <p>
-              Java é uma linguagem de programação orientada a objetos. Diferente
-              das linguagens de programação modernas, que são compiladas para
-              código nativo, Java é compilada para um bytecode que é
-              interpretado por uma máquina virtual (Java Virtual Machine,
-              abreviada JVM). A linguagem de programação Java é a linguagem
-              convencional da Plataforma Java, mas não é a sua única linguagem.
-            </p>
-            <p>Os maiores pontos positivos de Java são:</p>
-            <ul>
-              <li>funciona em qualquer plataforma ou sistema operacional;</li>
-              <li>
-                Grande comunidade (maior facilidade a procurar codigo para o seu
-                projeto);
-              </li>
-              <li>Muitas frameworks;</li>
-              <li>A maquina virtual java suporta muitas outras linguagens;</li>
-              <li>Aloca e liberta automaticamente a memória;</li>
-            </ul>
-            <p>Os maiores pontos negativos são:</p>
-            <ul>
-              <li>É lento;</li>
-              <li>Precisa de muita memória;</li>
-              <li>Não tem funcionalidades de <i>backup</i></li>
-              <li>Código muito abstrato;</li>
-            </ul>
-          </h4>
-        </div>
-        <div class="img">
-          <img
-            id="java"
-            alt="java"
-            src="https://www.codegrepper.com/codeimages/reverse-string-in-java-using-scanner.png"
-          />
-        </div>
-      </section>
-    </section>
-    <br /><br /><br />
-
-    <section class="wow animate__fadeInLeft">
-      <div id="title">
-        <h1><b>Conclusão</b></h1>
-      </div>
-
-      <section id="c">
-        <div class="container" id="co">
-          <h4 id="con" class="fst-normal">
-            <p>
-              Com este trabalho ficamos a conhecer mais sobre maior parte das
-              linguagens de programação mais utilizadas da atualidade, e como o
-              código de cada uma é estruturado.
-            </p>
-            <p>
-              Percebemos ainda o porquê que são utilizadas e qual a função que
-              mais vantagem tira dessas linguagens, e por isso, as utiliza mais.
-            </p>
-            <p>
-              Para além de conhecimento sobre as linguagens também precebemos
-              como o computador processa as informação e como a linguagem é
-              "traduzida" para linguagem de máquina, e como nós mesmos podemos
-              fazer essa conversão
-            </p>
-            <p>
-              Espero ainda ter desperto um pouco de curiosidade e esclarecido
-              algumas dúvidas sobre as linguagens de programação.
-            </p>
-          </h4>
-        </div>
-      </section>
-    </section>
-
-    <section class="wow animate__fadeInRight">
-      <div class="bibl">
-        <div class="indice">
-          <h2 id="titleI" class="rainbow">Bibliografia:</h2>
-          <br />
-          <p></p>
-          <h4 id="bib">
-            <ul>
-              <li>
-                <a
-                  id="justify"
-                  href="https://pt.wikipedia.org/wiki/C_%28linguagem_de_programa%C3%A7%C3%A3o%29"
-                  >https://pt.wikipedia.org/wiki/C_%28linguagem_de_programa%C3%A7%C3%A3o%29</a
-                >, acedido em 24/09/2022
-                <!--script to adjust the link into the box (made especially for pcs 800px-600px)-->
-                <script>
-                  if (screen.width < 1366) {
-                    document.getElementById("justify").innerHTML =
-                      "https://pt.wikipedia.org/wiki/C_%28linguagem_de_programa" +
-                      "<br>" +
-                      "%C3%A7%C3%A3o%29";
-                  }
-                </script>
-              </li>
-              <br />
-              <li>
-                <a href="https://pt.wikipedia.org/wiki/Python"
-                  >https://pt.wikipedia.org/wiki/Python</a
-                >, acedido em 25/09/2022
-              </li>
-              <br />
-              <li>
-                <a href="https://pt.wikipedia.org/wiki/SQL"
-                  >https://pt.wikipedia.org/wiki/SQL</a
-                >, acedido em 25/09/2022
-              </li>
-              <br />
-              <li>
-                <a href="https://pt.wikipedia.org/wiki/JavaScript"
-                  >https://pt.wikipedia.org/wiki/JavaScript</a
-                >, acedido em 27/09/2022
-              </li>
-              <br />
-              <li>
-                <a href="https://pt.wikipedia.org/wiki/HTML"
-                  >https://pt.wikipedia.org/wiki/HTML</a
-                >, acedido em 28/09/2022
-              </li>
-              <br />
-              <li>
-                <a href="https://pt.wikipedia.org/wiki/CSS3"
-                  >https://pt.wikipedia.org/wiki/CSS3</a
-                >, acedido em 29/09/2022
-              </li>
-              <br />
-              <li>
-                <a href="https://uicookies.com/css-border-animation/"
-                  >https://uicookies.com/css-border-animation/</a
-                >, acedido em 1/10/2022
-              </li>
-              <br />
-              <li>
-                <a href="https://uicookies.com/css-ribbons/"
-                  >https://uicookies.com/css-ribbons/</a
-                >, acedido em 2/10/2022
-              </li>
-              <br />
-              <li>
-                <a href="https://github.com/matthieua/WOW/"
-                  >https://github.com/matthieua/WOW/</a
-                >, acedido em 3/10/2022
-              </li>
-              <br />
-              <li>
-                <a href="https://www.geeksforgeeks.org/c-plus-plus/"
-                  >https://www.geeksforgeeks.org/c-plus-plus/</a
-                >, acedido em 7/10/2022
-              </li>
-              <br />
-              <li>
-                <a href="https://bit.ly/3ee5BDc">https://bit.ly/3ee5BDc</a>,
-                acedido em 7/10/2022
-              </li>
-            </ul>
-          </h4>
-        </div>
+      <div class="img">
+        <img id="js" alt="código binário" src="pictures/Javascript.png" />
       </div>
     </section>
     <br /><br /><br />
+  </section>
 
-    <section class="wow animate__fadeInDown">
-      <div id="Qbox">
-        <div class="centerBox">
-          <div class="categoryWrapper">
-            <h1 id="Q">QUIZZ!</h1>
-            <button>
-              <a href="quiz/trivia/index.html" id="ah">
-                <span>
-                  <span>
-                    <span data-attr-span="Clique para começar!" id="hiper">
-                      Clica aqui para começar!
-                    </span>
-                  </span>
+  <br /><br /><br />
+  <section class="wow animate__fadeInLeft">
+    <div id="subtitle">
+      <h3><b>HTML</b></h3>
+    </div>
+
+    <section class="lcorpo">
+      <div class="container" id="ltxt">
+        <h4 id="lang" class="fst-normal">
+          <p>
+            HTML ou "<i>Hypertext Markup Language</i>" (significa "<i>Linguagem de marcação de Hipertexto</i>"), embora
+            não seja considerado uma linguagem é bastante
+            utilizado para a criação da "<i>Front-end</i>" dos websites.
+          </p>
+          <p>
+            Não é considerado uma linguagem pois não permite adicionar lógica
+            a um código, com a definição de linguagem percebemos que para se
+            enquadrarem nesse tipo, o "candidato" teria de poder dar ordens
+            aos comopnentes físicos, coisa que não acontece com o HTML, pois
+            este apenas serve para criar a página da frente dos websites, não
+            dando dinâmica nenhuma aos mesmos.
+          </p>
+          <p>
+            Sem a utilização de uma linguagem diferente os sites não teriam
+            dinâmica nenhuma e seriam <b>MUITO</b> aborrecidos, outra
+            "linguagem" que ajuda nisso é "CSS", porém esta também não pode
+            ser considerada uma linguagem como iremos ver a seguir.
+          </p>
+          <p>
+            <b>NOTA:</b> Na imagem ao lado, as palavras brancas, são de uma
+            sintaxe chamada "<i>Jinja</i>" utilizada pela frameword Flask
+            escrita em Python.
+          </p>
+        </h4>
+      </div>
+      <div class="img">
+        <img id="asspl" alt="código binário" src="pictures/HTML.png" />
+      </div>
+    </section>
+  </section>
+  <br /><br /><br />
+  <section class="wow animate__fadeInRight">
+    <div id="subtitle">
+      <h3><b>CSS</b></h3>
+    </div>
+
+    <section class="lcorpo">
+      <div class="container" id="ltxt">
+        <h4 id="lang" class="fst-normal">
+          <p>
+            CSS ou "<i>Cascating Style Sheets</i>" é um mecanismo para
+            adicionar estilo (cores, fontes, espaçamento, etc.) a um documento
+            web, isto é, esta "linguagem" "apenas" serve para colocar o HTML
+            "bonito", embora só faça isso, ela é bastante importante pois sem
+            ela os site seriam muito sem estilo, tudo igual e sem graça, não
+            haveria cor nem formatação apenas texto.
+          </p>
+          <p>Alguns dos pontos fortes do CSS são:</p>
+          <ul>
+            <li>Fácil de aprender;</li>
+            <li>Estruturada de forma em que o codigo é reutilizável;</li>
+          </ul>
+          <p>
+            A programação Web é praticamente composta apenas por CSS, HTML e
+            javascript, sabendo estes três componentes já é possível criar-se
+            um website bastante bonito, estruturado e responsivo.
+          </p>
+        </h4>
+      </div>
+
+      <div class="img">
+        <img id="asspp" alt="CSS" src="pictures/CSS.png" />
+      </div>
+    </section>
+  </section>
+  <br /><br /><br />
+
+  <section class="wow animate__fadeInLeft">
+    <div id="subtitle">
+      <h3><b>C++</b></h3>
+    </div>
+
+    <section class="lcorpo">
+      <div class="container" id="ltxt">
+        <h4 id="lang" class="fst-normal">
+          <p>
+            C++ é uma linguagem orientada e compilada de propósito geral. O
+            seu maior uso é para a criação de video jogos, porém tambem tem
+            outras utilidades como <i>Web Development Server Side</i>, ou
+            seja, criação de código do lado do servidor, e compiladores,
+            editores, ferramentas de programação e programas de redes.
+          </p>
+          <p>
+            Esta linguagem como ja mencionei foi baseada em C (na verdade, foi
+            tão baseada em C que na sua criação - 1980 - era chamada de "<i>C with classes</i>", tendo depois mudado
+            para C++), e por isso herdou os seus
+            "cons" e os seus "pros" como:
+          </p>
+          <ul>
+            <li>
+              Bastantes bibliotecas online para adicionar ao seu código;
+            </li>
+            <li>Bastante rápida;</li>
+            <li>versátil</li>
+          </ul>
+          <p>Alguns dos contras são:</p>
+          <ul>
+            <li>Dificil de aprender;</li>
+            <li>Dificil de implementar;</li>
+            <li>Dificil leitura e compreensão do codigo de outra pessoa;</li>
+            <li>
+              A rapidez maior parte das vezes não é necessária, não
+              compensando a dificuldade
+            </li>
+          </ul>
+        </h4>
+      </div>
+
+      <div class="img">
+        <img id="ass" alt="Reverse a string in C++"
+          src="https://appdividend.com/wp-content/uploads/2019/06/JavaScript-Array-Reverse-Example-JS-Array-Reverse-Method.png" />
+      </div>
+    </section>
+  </section>
+  <br /><br /><br />
+  <section class="wow animate__fadeInRight">
+    <div id="subtitle">
+      <h3><b>Java</b></h3>
+    </div>
+
+    <section class="lcorpo">
+      <div class="container" id="ltxt">
+        <h4 id="lang" class="fst-normal">
+          <p>
+            Java é uma linguagem de programação orientada a objetos. Diferente
+            das linguagens de programação modernas, que são compiladas para
+            código nativo, Java é compilada para um bytecode que é
+            interpretado por uma máquina virtual (Java Virtual Machine,
+            abreviada JVM). A linguagem de programação Java é a linguagem
+            convencional da Plataforma Java, mas não é a sua única linguagem.
+          </p>
+          <p>Os maiores pontos positivos de Java são:</p>
+          <ul>
+            <li>funciona em qualquer plataforma ou sistema operacional;</li>
+            <li>
+              Grande comunidade (maior facilidade a procurar codigo para o seu
+              projeto);
+            </li>
+            <li>Muitas frameworks;</li>
+            <li>A maquina virtual java suporta muitas outras linguagens;</li>
+            <li>Aloca e liberta automaticamente a memória;</li>
+          </ul>
+          <p>Os maiores pontos negativos são:</p>
+          <ul>
+            <li>É lento;</li>
+            <li>Precisa de muita memória;</li>
+            <li>Não tem funcionalidades de <i>backup</i></li>
+            <li>Código muito abstrato;</li>
+          </ul>
+        </h4>
+      </div>
+      <div class="img">
+        <img id="java" alt="java"
+          src="https://www.codegrepper.com/codeimages/reverse-string-in-java-using-scanner.png" />
+      </div>
+    </section>
+  </section>
+  <br /><br /><br />
+
+  <section class="wow animate__fadeInLeft">
+    <div id="title">
+      <h1><b>Conclusão</b></h1>
+    </div>
+
+    <section id="c">
+      <div class="container" id="co">
+        <h4 id="con" class="fst-normal">
+          <p>
+            Com este trabalho ficamos a conhecer mais sobre maior parte das
+            linguagens de programação mais utilizadas da atualidade, e como o
+            código de cada uma é estruturado.
+          </p>
+          <p>
+            Percebemos ainda o porquê que são utilizadas e qual a função que
+            mais vantagem tira dessas linguagens, e por isso, as utiliza mais.
+          </p>
+          <p>
+            Para além de conhecimento sobre as linguagens também precebemos
+            como o computador processa as informação e como a linguagem é
+            "traduzida" para linguagem de máquina, e como nós mesmos podemos
+            fazer essa conversão
+          </p>
+          <p>
+            Espero ainda ter desperto um pouco de curiosidade e esclarecido
+            algumas dúvidas sobre as linguagens de programação.
+          </p>
+        </h4>
+      </div>
+    </section>
+  </section>
+
+  <section class="wow animate__fadeInRight">
+    <div class="bibl">
+      <div class="indice">
+        <h2 id="titleI" class="rainbow">Bibliografia:</h2>
+        <br />
+        <p></p>
+        <h4 id="bib">
+          <ul>
+            <li style="display: inline-block;">
+              <a
+                href="https://pt.wikipedia.org/wiki/C_%28linguagem_de_programa%C3%A7%C3%A3o%29">https://pt.wikipedia.org/wiki/C_%28linguagem_de_programa%C3%A7%C3%A3o%29</a>,
+              acedido em 24/09/2022
+
+            </li>
+            <br />
+            <li>
+              <a href="https://pt.wikipedia.org/wiki/Python">https://pt.wikipedia.org/wiki/Python</a>, acedido em
+              25/09/2022
+            </li>
+            <br />
+            <li>
+              <a href="https://pt.wikipedia.org/wiki/SQL">https://pt.wikipedia.org/wiki/SQL</a>, acedido em 25/09/2022
+            </li>
+            <br />
+            <li>
+              <a href="https://pt.wikipedia.org/wiki/JavaScript">https://pt.wikipedia.org/wiki/JavaScript</a>, acedido
+              em 27/09/2022
+            </li>
+            <br />
+            <li>
+              <a href="https://pt.wikipedia.org/wiki/HTML">https://pt.wikipedia.org/wiki/HTML</a>, acedido em 28/09/2022
+            </li>
+            <br />
+            <li>
+              <a href="https://pt.wikipedia.org/wiki/CSS3">https://pt.wikipedia.org/wiki/CSS3</a>, acedido em 29/09/2022
+            </li>
+            <br />
+            <li>
+              <a href="https://uicookies.com/css-border-animation/">https://uicookies.com/css-border-animation/</a>,
+              acedido em 1/10/2022
+            </li>
+            <br />
+            <li>
+              <a href="https://uicookies.com/css-ribbons/">https://uicookies.com/css-ribbons/</a>, acedido em 2/10/2022
+            </li>
+            <br />
+            <li>
+              <a href="https://github.com/matthieua/WOW/">https://github.com/matthieua/WOW/</a>, acedido em 3/10/2022
+            </li>
+            <br />
+            <li>
+              <a href="https://www.geeksforgeeks.org/c-plus-plus/">https://www.geeksforgeeks.org/c-plus-plus/</a>,
+              acedido em 7/10/2022
+            </li>
+            <br />
+            <li>
+              <a href="https://bit.ly/3ee5BDc">https://bit.ly/3ee5BDc</a>,
+              acedido em 7/10/2022
+            </li>
+          </ul>
+        </h4>
+      </div>
+    </div>
+  </section>
+  <br /><br /><br />
+
+  <section class="wow animate__fadeInDown">
+    <div class="centerBox">
+      <div class="categoryWrapper">
+        <h1 id="Q">QUIZZ!</h1>
+        <button>
+          <a href="quiz/trivia/index.html" id="ah">
+            <span>
+              <span>
+                <span data-attr-span="Clique para começar!" id="hiper">
+                  Clica aqui para começar!
                 </span>
-              </a>
-            </button>
-          </div>
-        </div>
+              </span>
+            </span>
+          </a>
+        </button>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script src="static/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
-    <script src="static/dist/script.js"></script>
-  </body>
+  <script src="static/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+  <script src="static/dist/script.js"></script>
+</body>
+
 </html>

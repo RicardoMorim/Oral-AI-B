@@ -545,8 +545,7 @@ h3 {
 .block {
   position: relative;
   margin: 300px auto 0;
-  width: 50vw;
-  height: 63vh;
+  width: 60%;
   background: linear-gradient(0deg, lightgray, lightblue);
 }
 
@@ -620,8 +619,7 @@ h3 {
 .bibl {
   position: relative;
   margin: 400px auto 0;
-  width: 80vw;
-  height: 95vh;
+  width: 80%;
   background: linear-gradient(0deg, lightgray, lightblue);
 }
 
@@ -711,21 +709,21 @@ h3 {
   right: 0;
   bottom: 0;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a29ca9+0,95909b+99 */
-  background: #a29ca9; /* Old browsers */
+  background: salmon; /* Old browsers */
   background: -moz-linear-gradient(
     -45deg,
-    #a29ca9 0%,
-    #95909b 99%
+    salmon 0%,
+    red 99%
   ); /* FF3.6-15 */
   background: -webkit-linear-gradient(
     -45deg,
-    #a29ca9 0%,
-    #95909b 99%
+    salmon 0%,
+    red 99%
   ); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(
     135deg,
-    #a29ca9 0%,
-    #95909b 99%
+    salmon 0%,
+    red 99%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', endColorstr='#95909b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   content: "";
@@ -738,12 +736,28 @@ h3 {
 }
 
 .categoryWrapper h1 {
-  color: white;
-  font-size: 50px;
-  letter-spacing: 2px;
-  -webkit-transition: all 0.15s ease 0s;
-  position: relative;
-  z-index: 10;
+  background: linear-gradient(
+    to right,
+    #6666ff,
+    #0099ff,
+    #00ff00,
+    #ff3399,
+    #6666ff
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow-quizz 6s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+
+@keyframes rainbow-quizz {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 .categoryWrapper:hover h1 {
@@ -756,7 +770,7 @@ h3 {
   -webkit-appearance: none;
   border: none;
   background: none;
-  color: white;
+  color: gray;
   width: 250px;
   height: 50px;
   font-size: 20px;
@@ -1410,8 +1424,7 @@ h3 {
   .block {
     position: relative;
     margin: 300px auto 0;
-    width: 50vw;
-    height: 76vh;
+    width: 60%;
     background: linear-gradient(0deg, lightgray, lightblue);
   }
 
@@ -1485,8 +1498,7 @@ h3 {
   .bibl {
     position: relative;
     margin: 400px auto 0;
-    width: 80vw;
-    height: 120vh;
+    width: 80%;
     background: linear-gradient(0deg, lightgray, lightblue);
   }
 
@@ -1576,21 +1588,21 @@ h3 {
     right: 0;
     bottom: 0;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a29ca9+0,95909b+99 */
-    background: #a29ca9; /* Old browsers */
+    background: salmon; /* Old browsers */
     background: -moz-linear-gradient(
       -45deg,
-      #a29ca9 0%,
-      #95909b 99%
+      salmon 0%,
+      red 99%
     ); /* FF3.6-15 */
     background: -webkit-linear-gradient(
       -45deg,
-      #a29ca9 0%,
-      #95909b 99%
+      salmon 0%,
+      red 99%
     ); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(
       135deg,
-      #a29ca9 0%,
-      #95909b 99%
+      salmon 0%,
+      red 99%
     ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', endColorstr='#95909b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     content: "";
@@ -1603,12 +1615,25 @@ h3 {
   }
 
   .categoryWrapper h1 {
-    color: white;
     font-size: 50px;
     letter-spacing: 2px;
     -webkit-transition: all 0.15s ease 0s;
     position: relative;
     z-index: 10;
+    background-image: linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    animation: rainbow-quizz 5s linear infinite;
   }
 
   .categoryWrapper:hover h1 {
@@ -1682,7 +1707,6 @@ h3 {
     height: calc(100% - 2px);
     transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
   }
-
   .categoryWrapper button > a > span > span:before {
     content: "";
     position: absolute;
@@ -2284,8 +2308,7 @@ h3 {
   .block {
     position: relative;
     margin: 300px auto 0;
-    width: 50vw;
-    height: 120vh;
+    width: 60%;
     background: linear-gradient(0deg, lightgray, lightblue);
   }
 
@@ -2360,10 +2383,8 @@ h3 {
   .bibl {
     position: relative;
     margin: 400px auto 0;
-    width: 80vw;
-    height: 220vh;
+    width: 80%;
     background: linear-gradient(0deg, lightgray, lightblue);
-    max-width: 80vw;
   }
 
   .bibl:before,
@@ -2452,21 +2473,21 @@ h3 {
     right: 0;
     bottom: 0;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a29ca9+0,95909b+99 */
-    background: #a29ca9; /* Old browsers */
+    background: salmon; /* Old browsers */
     background: -moz-linear-gradient(
       -45deg,
-      #a29ca9 0%,
-      #95909b 99%
+      salmon 0%,
+      red 99%
     ); /* FF3.6-15 */
     background: -webkit-linear-gradient(
       -45deg,
-      #a29ca9 0%,
-      #95909b 99%
+      salmon 0%,
+      red 99%
     ); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(
       135deg,
-      #a29ca9 0%,
-      #95909b 99%
+      salmon 0%,
+      red 99%
     ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', endColorstr='#95909b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     content: "";
@@ -2479,13 +2500,28 @@ h3 {
   }
 
   .categoryWrapper h1 {
-    color: white;
     font-size: 50px;
     letter-spacing: 2px;
     -webkit-transition: all 0.15s ease 0s;
     position: relative;
     z-index: 10;
+    background-image: linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    animation: rainbow-quizz 5s linear infinite;
   }
+
+
 
   .categoryWrapper:hover h1 {
     transform: translateY(-10px);
